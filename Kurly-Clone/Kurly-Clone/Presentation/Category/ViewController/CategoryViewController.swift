@@ -8,11 +8,12 @@
 import UIKit
 
 class CategoryViewController: UIViewController {
-
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
     }
-
 }
