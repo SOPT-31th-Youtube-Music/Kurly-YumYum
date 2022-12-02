@@ -8,22 +8,32 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    // MARK: - UI Components
+    private let headerView = HeaderView("검색")
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setUI()
+        setLayout()
     }
-    */
+}
 
+extension SearchViewController {
+    private func setUI() {
+        view.backgroundColor = .white
+    }
+    
+    private func setLayout() {
+        view.addSubviews(headerView)
+        
+        headerView.snp.makeConstraints {
+            $0.top.leading.trailing.equalToSuperview()
+            $0.height.equalTo(92)
+        }
+    }
 }

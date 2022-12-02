@@ -7,12 +7,36 @@
 
 import UIKit
 
-class CategoryViewController: UIViewController {
+import SnapKit
+import Then
 
+class CategoryViewController: UIViewController {
+    
+    // MARK: - UI Components
+    private let headerView = HeaderView("카테고리")
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setUI()
+        setLayout()
     }
+}
 
+extension CategoryViewController {
+    private func setUI() {
+        view.backgroundColor = .white
+    }
+    
+    private func setLayout() {
+        view.addSubviews(headerView)
+        
+        headerView.snp.makeConstraints {
+            $0.top.leading.trailing.equalToSuperview()
+            $0.height.equalTo(92)
+        }
+    }
 }
