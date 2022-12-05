@@ -24,6 +24,14 @@
 		3B54531429341602001C819D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54531329341602001C819D /* Color.swift */; };
 		3B5453162934160B001C819D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5453152934160B001C819D /* UIView+.swift */; };
 		3B54531829341612001C819D /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54531729341612001C819D /* UIStackView+.swift */; };
+		3B71186A29359F800087D00B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71186929359F800087D00B /* HeaderView.swift */; };
+		3B8A3C0029366AC0007B7F37 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A3BFF29366AC0007B7F37 /* RecommendViewController.swift */; };
+		3B8A3C0229366AD8007B7F37 /* NewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A3C0129366AD8007B7F37 /* NewProductViewController.swift */; };
+		3B8A3C0429366AF3007B7F37 /* BestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A3C0329366AF3007B7F37 /* BestViewController.swift */; };
+		3B8A3C0629366B09007B7F37 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A3C0529366B09007B7F37 /* ShoppingViewController.swift */; };
+		3B8A3C0829366B2D007B7F37 /* SaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A3C0729366B2D007B7F37 /* SaleViewController.swift */; };
+		3B8A3C0B2938F071007B7F37 /* TabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A3C0A2938F071007B7F37 /* TabCollectionViewCell.swift */; };
+		3BE3BDD02935A89C00C6AFF1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3BDCF2935A89C00C6AFF1 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +51,14 @@
 		3B54531329341602001C819D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		3B5453152934160B001C819D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		3B54531729341612001C819D /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		3B71186929359F800087D00B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		3B8A3BFF29366AC0007B7F37 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		3B8A3C0129366AD8007B7F37 /* NewProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductViewController.swift; sourceTree = "<group>"; };
+		3B8A3C0329366AF3007B7F37 /* BestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestViewController.swift; sourceTree = "<group>"; };
+		3B8A3C0529366B09007B7F37 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+		3B8A3C0729366B2D007B7F37 /* SaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleViewController.swift; sourceTree = "<group>"; };
+		3B8A3C0A2938F071007B7F37 /* TabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BE3BDCF2935A89C00C6AFF1 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +114,7 @@
 		3B5452EE2934142B001C819D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3B71186829359F6B0087D00B /* Common */,
 				3B5452FF293414C3001C819D /* TabBar */,
 				3B5452EF2934143A001C819D /* Home */,
 				3B5452F02934143F001C819D /* Category */,
@@ -110,6 +127,7 @@
 		3B5452EF2934143A001C819D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3B8A3C092938F055007B7F37 /* Cell */,
 				3B5452F329341467001C819D /* ViewController */,
 			);
 			path = Home;
@@ -143,6 +161,11 @@
 			isa = PBXGroup;
 			children = (
 				3B5452F729341488001C819D /* HomeViewController.swift */,
+				3B8A3BFF29366AC0007B7F37 /* RecommendViewController.swift */,
+				3B8A3C0129366AD8007B7F37 /* NewProductViewController.swift */,
+				3B8A3C0329366AF3007B7F37 /* BestViewController.swift */,
+				3B8A3C0529366B09007B7F37 /* ShoppingViewController.swift */,
+				3B8A3C0729366B2D007B7F37 /* SaleViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -204,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				3B54531329341602001C819D /* Color.swift */,
+				3BE3BDCF2935A89C00C6AFF1 /* Image.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -215,6 +239,22 @@
 				3B54531729341612001C819D /* UIStackView+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3B71186829359F6B0087D00B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3B71186929359F800087D00B /* HeaderView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3B8A3C092938F055007B7F37 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3B8A3C0A2938F071007B7F37 /* TabCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,13 +338,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8A3C0429366AF3007B7F37 /* BestViewController.swift in Sources */,
 				3B5452FC293414A2001C819D /* SearchViewController.swift in Sources */,
 				3B5452FE293414B8001C819D /* MyPageViewController.swift in Sources */,
 				3B5452DA293413D0001C819D /* AppDelegate.swift in Sources */,
+				3B8A3C0229366AD8007B7F37 /* NewProductViewController.swift in Sources */,
 				3B5452DC293413D0001C819D /* SceneDelegate.swift in Sources */,
+				3B8A3C0629366B09007B7F37 /* ShoppingViewController.swift in Sources */,
+				3BE3BDD02935A89C00C6AFF1 /* Image.swift in Sources */,
 				3B5453162934160B001C819D /* UIView+.swift in Sources */,
 				3B545301293414DA001C819D /* TabBarController.swift in Sources */,
 				3B5452F829341488001C819D /* HomeViewController.swift in Sources */,
+				3B71186A29359F800087D00B /* HeaderView.swift in Sources */,
+				3B8A3C0029366AC0007B7F37 /* RecommendViewController.swift in Sources */,
+				3B8A3C0B2938F071007B7F37 /* TabCollectionViewCell.swift in Sources */,
+				3B8A3C0829366B2D007B7F37 /* SaleViewController.swift in Sources */,
 				3B545303293414E7001C819D /* TabBarItem.swift in Sources */,
 				3B54531829341612001C819D /* UIStackView+.swift in Sources */,
 				3B5452FA29341496001C819D /* CategoryViewController.swift in Sources */,

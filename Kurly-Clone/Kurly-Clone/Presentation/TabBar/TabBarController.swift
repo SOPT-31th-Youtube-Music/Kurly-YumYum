@@ -18,8 +18,6 @@ class TabBarController: UITabBarController {
         setTabBarItems()
     }
     
-
-    
     override func viewWillLayoutSubviews() {
         setTabBarUI()
         setStatusBar(.main)
